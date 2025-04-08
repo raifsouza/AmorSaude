@@ -1,0 +1,95 @@
+/* Título "Entidades" fixo e à esquerda */
+.titulo {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 20px 40px;
+}
+
+/* Centraliza o container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cabeçalho com botão e busca */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.btn-nova-entidade {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-nova-entidade:hover {
+  background-color: #0056b3;
+}
+
+.search-bar {
+  text-align: right;
+}
+
+.search-bar input {
+  padding: 10px 12px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+th {
+  background-color: #f4f4f4;
+  text-align: left;
+  padding: 12px;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+td {
+  background-color: #fafafa;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.actions .edit {
+  background-color: #ffc107;
+  color: white;
+}
+
+.actions .delete {
+  background-color: #dc3545;
+  color: white;
+}

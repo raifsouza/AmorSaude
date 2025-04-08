@@ -1,0 +1,30 @@
+<h2 *ngIf="!clinicaId">Criar Entidade</h2>
+<h2 *ngIf="clinicaId && !modoVisualizacao">Editar Entidade</h2>
+<h2 *ngIf="modoVisualizacao">Visualizar Entidade</h2>
+
+<form [formGroup]="clinicaForm" (ngSubmit)="salvar()">
+  <div>
+    <input placeholder="Nome" formControlName="nome" />
+    <input placeholder="Responsável" formControlName="responsavel" />
+    <input placeholder="Região" formControlName="regiao" />
+  </div>
+
+  <div>
+    <input placeholder="CNPJ" formControlName="cnpj" />
+    <input placeholder="E-mail" formControlName="email" />
+    <input placeholder="Telefone" formControlName="telefone" />
+  </div>
+
+  <div>
+    <input type="date" formControlName="data_criacao" />
+    <label>
+      <input type="checkbox" formControlName="ativa" />
+      Ativa
+    </label>
+  </div>
+
+  <div class="botoes">
+    <button type="button" (click)="cancelar()">Cancelar</button>
+    <button type="submit" [disabled]="modoVisualizacao">Salvar</button>
+  </div>
+</form>
